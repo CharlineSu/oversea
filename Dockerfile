@@ -16,4 +16,4 @@ RUN pip install --no-cache-dir playwright openpyxl pandas Pillow
 RUN playwright install chromium && playwright install-deps
 
 # 指定容器启动时执行的命令
-CMD ["python", "./src/uitests/app.py"]
+CMD ["python", "src/uitests/app.py"]

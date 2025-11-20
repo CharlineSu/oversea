@@ -12,7 +12,7 @@ WORKDIR /app
 COPY . /app
 
 # 安装依赖
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir playwright openpyxl pandas Pillow
 RUN playwright install chromium && playwright install-deps
 
 # 指定容器启动时执行的命令

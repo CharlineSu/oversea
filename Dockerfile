@@ -1,3 +1,3 @@
-FROM seataio/seata-server:2.0.0
+FROM mysql:8.4.4
 
 
